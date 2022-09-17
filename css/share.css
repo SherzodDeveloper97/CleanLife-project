@@ -1,0 +1,436 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin-block-end: 0;
+    margin-block-start: 0;
+    padding-inline-start: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    /* background-color: yellowgreen; */
+    /* overflow-x: hidden ; */
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+ /* border:2px solid red;*/
+}
+
+/* Modal Form */
+.modal_form{
+    /* border:1px solid red; */
+    display:none;
+}
+.modal_form.active{
+    display: block;
+}
+.modal_container_big{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    background:rgba(0, 0, 0,0.74);
+    position:fixed;
+    z-index: 30;
+    transition:all 0.8s ease;
+}
+.modal_container{
+    width:35%; 
+    padding: 36px 55px 35px 55px;
+    text-align: center;
+    /* border:1px solid black; */
+    background:#fff;
+    position: relative;
+}
+.modal_title{
+    padding-bottom: 31px;
+}
+.modal_title h2{
+    font-family: 'Gilroy';
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 45px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #00187B;
+}
+.modal_container .input_block{
+    display: flex;
+    /* justify-content:space-between; */
+    box-sizing: border-box;
+    width: 100%;
+}
+.modal_container .input_block input[type='text'],.modal_container .input_block textarea{
+    width: 100%;
+}
+.modal_container .input_block input[type='tel'],.modal_container .input_block .select_block{
+    /* flex: 1; */
+}
+.modal_container .input_block input[type='tel']{
+    margin-right: 16px;
+    width: 25%;
+}
+.modal_container .input_block .select_block{
+    width: 60%;
+    position: relative;
+}
+.modal_container .input_block .select_block select,.modal_container .input_block .select_block select option{
+    width: 100%;
+}
+.modal_container form input[type='submit']{
+    /* text-align: center; */
+}
+.close_form{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+}
+
+/* about-content */
+.about_content{
+    background-image: url(../images/flex_navbar_bg.png);
+    height: 459px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    padding-top: 98px;
+}
+.about_content .container{
+    display: flex;
+    justify-content: center;
+}
+.about_title{
+    text-align: center;
+}
+.about_title h3,.about_title p{
+    font-family: 'Gilroy';
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 75px;
+    letter-spacing: 0em;
+    color: #fff;
+    margin-block-end: 0;
+    margin-block-start: 0;
+}
+.about_title .line{
+    width: 199px;
+    height: 1px;
+    background-color: #fff;
+    text-align: center;
+    margin-top: 18px;
+    margin-bottom: 25px;
+}
+.about_title p{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+/* /about-content */
+
+/* Humburger menu */
+#check,.checkbtn{
+    display: none;
+}
+
+/* header-scroll */
+.about_header{
+    background-color: #fff;
+}
+.about_header .header_top{
+    padding-bottom: 29px;
+    background:#fff;
+}
+.about_header .menu ul li a,.about_header .phone_number a,.about_header .phone_number a span{
+    color: #000;
+}
+.about_header .menu ul #vector svg path{
+    stroke: #000;
+}
+.about_header .language{
+    position: relative;
+    margin-top: 48px;
+    margin-left: 52px;
+    margin-right: 56px;
+}
+.about_header .language a,.about_header .language_button{
+    border-color: #000;
+}
+.about_header .language a h1{
+    color: rgb(44, 32, 32);
+    display: inline-block;    
+}
+.about_header .language a svg{
+    padding-top: 8px;
+}
+.about_header .language a svg path{
+    stroke: #000;
+}
+/* /header-scroll */
+
+/* Scroll To Top */
+.scroll-to-top .gotobtn{
+    position: fixed;
+    width: 56px;
+    height: 56px;
+    background:#00B027;
+    right: 26px;
+    bottom: 60px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    pointer-events: none;
+    transition: all 0.4s ease-in-out;
+    text-decoration: none; 
+    opacity: 0;
+}
+.scroll-to-top .gotobtn.active_up{
+    pointer-events: auto;
+    opacity: 1;
+}
+.scroll-to-top .gotobtn .arrow_up{
+    width: 34px;
+    height: 34px;
+}
+.scroll-to-top .gotobtn.active_up:hover{
+    background: #2B388F;
+}
+/* /Scroll To Top */
+
+/* Forma - open */
+.form_block{
+    display: flex;
+    position: relative;
+}
+.form{
+    padding-right: 30px;
+    /* width: 546px; */
+}
+form input[type='text'],form input[type='tel'],select{
+    width: 100%;
+    padding: 18px 18px 18px 20px;
+    background: transparent;
+    border: 1px solid #D2D2D2;
+    /* box-sizing: border-box; */
+    border-radius: 5px;
+    font-family: 'Gilroy';
+    font-size: 16px;
+    color: #000;
+}
+form input[type='text'],.contact_right form input[type='text']{
+    padding: 20px 18px 20px 20px;
+}
+.form form input[type='text']::placeholder,form input[type='tel']::placeholder,textarea::placeholder,select,input[type='text']::placeholder {
+    font-family: 'Gilroy';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #828282;
+}
+.input_text,.textarea_block{
+    box-sizing: border-box;
+    display: flex;
+}
+.input_block{
+    width: 100%;
+    padding-top: 31px;
+    padding-bottom: 22px;
+    display:flex;
+    /* justify-content: space-between; */
+}
+form input[type='tel'],.select_block{
+    flex: 1;
+}
+form input[type='tel']{
+    margin-right: 16px;
+}
+.form_block form textarea,.contact_right .form textarea,textarea{
+    width: 100%;
+    border: 1px solid #D2D2D2;
+    /* box-sizing: border-box; */
+    border-radius: 5px;
+    margin-bottom: 22px;
+    /* height: 146px; */
+    padding: 17px 20px 129px 20px;
+    font-family: 'Gilroy';
+    font-size: 16px;
+    color: #000;
+}
+.contact_right .form textarea{
+    /* padding: 17px 20px 0px 20px; */
+}
+form input[type='submit']{
+    font-family: 'Gilroy';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #fff;      
+    padding: 18px 55px 18px 56px;
+    background: #00B027;
+    border-radius: 5px;
+    border: 0px solid #00B027;
+}
+form input[type='submit']:hover{
+    background-color: rgb(0, 24, 123);;
+    cursor: pointer;
+    transition: 1.5s;
+}
+.form_image{
+    position: absolute;
+    right: 25px;
+    top: -53px;
+}
+
+.select_block{
+    position: relative;
+}
+.select{
+    -webkit-appearance: none;
+    padding: 18px 0px 18px 20px;
+    /* box-sizing: unset; */
+    /* width: 277px; */
+}
+.down_arrow{
+    position: absolute;
+    right: 16px;
+    bottom: 50%;
+    width: 16px;
+    height: 16px;
+    transform:translateY(50%);
+    cursor: pointer;
+    z-index: 6;
+}
+/* Forma - close */
+
+/* Slider - nav button */
+.tns-nav{
+    text-align: center;
+    margin-top: 45px;
+}
+.tns-nav button{
+    width: 30px;
+    height: 6px;
+    background: #DDDDDD;
+    border-radius: 50px;
+    margin-right: 7px;
+    cursor: pointer;
+    border:0;
+}
+.tns-nav .tns-nav-active{
+    background:#00B027;
+    transition: all 0.3s ease-in;
+}
+
+@media screen and (max-width:1006px){
+    @media screen and (max-width: 768px) and (min-width: 320px) and (orientation: portrait){
+        .form_block{
+            width: 100%;
+            text-align: center;
+            box-sizing: border-box;
+        }
+        .form{
+            padding-right: 0;       
+        }
+        .form_image{
+            display:none;
+        }
+        form input[type='tel']{
+            width: 45%;
+            flex:unset;
+        }
+        .select_block{
+            width: 55%;
+            flex:unset;
+        }
+        .about_header .language{
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 24px;
+        }
+    }
+    
+    @media screen and (max-width: 768px) and (min-width:320px) and (orientation:portrait) {
+        .scroll-to-top .gotobtn{
+            width: 40px;
+            height: 40px;
+            bottom:48px;
+            z-index: 3;
+        }
+        .scroll-to-top .gotobtn .arrow_up{
+            width: 30px;
+            height: 30px;
+        }
+        .about_header .header_top{
+            padding-bottom: 0;
+        }
+        .modal_form{
+            /* transform:scale(0); */
+        }
+        .modal_form.active{
+            /* transform:scale(1); */
+        }
+        .modal_form.active,.modal_container_big,.modal_container{
+            width: 100%;
+        }
+        .modal_container{
+            padding:0;
+        }
+        .modal_internal_form{
+            /* transform:scale(1); */
+            padding-left: 10px;
+            padding-right: 10px;
+            max-width: 100%;
+            border: 1px solid #D2D2D2;
+            padding-top: 30px;
+        }
+        .modal_internal_form form,form input[type='text'], form input[type='tel'],select{
+            max-width: 100%;
+            padding: 14px 20px;
+        }
+        .modal_container .input_block{
+            flex-direction: column;
+            padding-top: 22px;
+        }
+        .modal_container .input_block input[type='tel']{
+            width: 100%;
+            margin-bottom: 22px;
+            margin-right: 0;
+        }
+        .modal_container .select{
+            padding: 14px 20px;
+        }
+        .modal_container textarea{
+            padding: 14px 20px 50px 20px;
+        }
+        .modal_title{
+            padding-bottom: 12px;
+        }
+        .modal_title h2{
+            font-size: 30px;
+            line-height: 16px;
+        }
+        .modal_container form input[type='submit']{
+            margin-bottom: 10px;
+        }
+        .order form input[type='text']{
+            padding: 18px 20px;
+        }
+    }
+}

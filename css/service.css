@@ -1,0 +1,291 @@
+/* Service-item */
+.services{
+    background-image: url(../images/services_bg.svg);
+    /* background: rgba(0, 176, 39, 0.1); */
+    background-repeat: no-repeat;
+    /* background-position-x: -18%; */
+}
+.services .container{
+    padding-bottom: 84px;
+    padding-top: 70px;    
+}
+.service_top{
+    text-align: center;
+}
+.service_top h6{
+    font-family: 'Gilroy';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0em;
+    color: #000;
+    padding-bottom: 15px;
+}
+.service_top h1{
+    font-family: 'Gilroy';
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #00187B;
+    padding-bottom: 20px;
+}
+.service_top p{
+    font-family: 'Gilroy';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #696969;
+    padding-bottom: 48px;
+}
+.service_case{
+    display: flex;
+    /* width: 364px; */
+    justify-content: space-between;
+}
+.services_block{
+    background-color: #FFFFFF;
+    /* margin-right: 54px; */
+    box-shadow: 0px 0px 10px rgba(0, 176, 39, 0.1);    
+    position: relative;
+    transition:all 0.3s ease-in;
+    /* cursor: pointer; */
+    border: 1px solid rgba(0, 176, 39, 0.2);
+    /* overflow: hidden; */
+}
+.services_block:hover{
+    /* box-shadow: 0px 0px 20px #8c8c8c; */
+}
+.service_next:hover{
+    /* box-shadow: 0px 24px 20px #8c8c8c; */
+}
+.img_service,.images_block,.img_left,.img_right{
+    overflow: hidden;
+}
+.service_img,.img_lupa{
+    cursor: pointer;
+    vertical-align: middle;
+    transition: all 0.3s ease-in;
+}
+.services_block .service_img:hover,.img_lupa:hover{
+    transform:scale(1.1);
+}
+.services_block:last-child{
+    margin-right: 0;
+}
+.service_info{
+    padding: 19px 39px 0px 24px;
+}
+.service_info h2{
+    font-family: 'Gilroy';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #00187B;
+    padding-bottom: 14px;
+}
+.service_info p,.service_next ul li a{
+    font-family: 'Gilroy';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #696969;
+    padding-bottom: 29px;
+}
+.services_item{
+    display: flex;
+    padding-bottom: 31px;
+}
+.services_item h4{
+    font-family: 'Gilroy';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #00187B;
+    padding-right: 22px;
+    cursor: pointer;
+}
+.services_item a{
+    display: inline-block;
+}
+.services_item img{
+    padding-top: 3px;
+    cursor: pointer;
+    width: 19px;
+    height: 19px;
+}
+.service_next{
+    padding: 19px 39px 0px 24px;
+    position: absolute;
+    top: 394px;
+    left: 0px;
+    background-color: #fff;
+    width: 300px;
+    z-index: 2;
+    box-shadow: 0px 74px 50px rgb(0 176 39 / 10%);
+    border: 1px solid rgba(0, 176, 39, 0.2);
+    border-top: 0;
+    /* transform:translateY(-90px); */
+}
+.service_next ul li{
+    list-style:inside;
+}
+.service_next ul li a{
+    line-height: 40px;
+}
+.service_next .services_item{
+    padding-top: 25px;
+}
+/* /Service-item */
+
+/* Clear-service - open */
+.clear_service{
+    background-image: url(../images/Rectangle\ 12.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.clear_service .container{
+    padding-top: 128px;
+    padding-bottom: 152px;
+    display: flex;
+    position: relative;
+}
+.clear_left h4,.clear_left h2{
+    font-family: 'Gilroy';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #000;
+    padding-bottom: 23px;
+}
+.clear_left h2{
+    font-size: 52px;
+    line-height: 64px;
+    color: #00187B;
+    padding-bottom: 62px;
+}
+.percent_block{
+    padding-bottom: 45px;
+}
+.percent_block:last-child{
+    padding-bottom: 0;
+}
+.percent_top{
+    display: flex;
+    justify-content: space-between;
+}
+.percent_top h6{
+    font-family: 'Gilroy';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #000;
+}
+.percent_transparent{
+    width: 696px;
+    height: 53px;
+    background-color: #F2F2F2;
+}
+.percent_block:nth-child(2) .percent_color{
+    width: 460px;
+}
+.percent_block:last-child .percent_color{
+    width: 612px;
+}
+.percent_color{
+    margin-top: 12px;
+    height: 100%;
+    width: 521px;
+    background-color: #00B027;
+}
+.clear_right img{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+/* Clear-service - close */
+
+@media screen and (max-width: 768px) and (min-width:320px) and (orientation: portrait) {
+    .service_top h1{
+        text-align: center;
+        font-size: 36px;
+        line-height: 42px;
+    }
+    .service_top h1 br,.clear_left h2 br{
+        display: none;
+    }
+    .clear_service{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .clear_service .container{
+        display: block;
+        padding-bottom: 650px;
+    }
+    .clear_left h4{
+        font-size: 21px;
+        text-align: center;
+    }
+    .clear_left h2{
+        font-size: 36px;
+        line-height: 42px;
+        text-align: center;
+    }
+    .clear_left h2 br{
+        display:none;
+    }
+    .clear_right img{
+        width: 250px;
+        height: auto;
+        right: unset;
+        left: 50%;
+        transform:translateX(-50%);
+    }
+    .percent_content{
+        max-width: 100%;
+    }
+    .percent_block{
+        width: 100%;
+    }
+    .percent_bottom{
+        width: 100%;
+    }
+    .percent_transparent{
+        width: 100%;
+        height: 35px;
+    }   
+    .percent_color{
+        width: 80%;
+    }
+    .percent_block:nth-child(2) .percent_color{
+        width: 70%;
+    }
+    .percent_block:last-child .percent_color{
+        width: 90%;
+    }
+    .service_next{
+        top: 412px;
+        width: 83%;
+    }
+}

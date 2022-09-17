@@ -1,0 +1,195 @@
+/* About-main */
+.about_nav{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 78px;
+    padding-bottom: 84px;
+}
+.nav_block{
+    padding: 41px 47px 91px 58px;
+    border: 2px solid #EEEFF2;
+    box-sizing: border-box;
+    border-radius: 5px;
+    text-align: center;
+    transition: all 0.4s ease-out;
+    box-shadow: 0px 0px 2px #808080;
+}
+.nav_block:hover{
+    background-color: #00B027;
+    box-shadow: unset;
+}
+.nav_block:hover .nav_image svg{
+    opacity: 0.6;
+}
+.nav_block:hover .nav_image_item svg{
+    opacity: 1;
+}
+.nav_block:hover .opacity_two{
+    fill: #fff;
+}
+.nav_block:hover .svg_two svg > path{
+    fill: #000;
+}
+.nav_block:hover .nav_title h4,.nav_block:hover .nav_title p{
+    color: #fff;
+}
+.nav_image{
+    position: relative;
+}
+.nav_image_item{
+    position: absolute;
+    left: 104px;
+    top: 10px;
+}
+.nav_image_item .svg_one{
+    position: relative;
+}
+.svg_two{
+    position: absolute;
+    left: 19%;
+    top: 16%;
+}
+.nav_title{
+    text-align: center;
+    padding-top: 43px;
+}
+.nav_title h4,.nav_title p{
+    font-family: 'Gilroy';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0em;
+    color: #000;
+}
+.nav_title p{
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 31px;
+    color: #696969;  
+    padding-top: 23px; 
+}
+/* /About-main */
+
+/* About-block */
+.about_block .container{
+    padding-bottom: 96px;
+}
+.about_block h4{
+    padding-bottom: 23px;
+}
+.about_block h4,.about_block h2,.p_one,.about_block_left p,.about_block_right p{
+    font-family: 'Gilroy';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #000;
+}
+.about_block h2{
+    font-size: 52px;
+    line-height: 64px;
+    color: #00187B;  
+    padding-bottom: 23px; 
+}
+.p_one{
+    padding-bottom: 25px;
+}
+.p_one,.about_block_left p,.about_block_right p{
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 31px;
+    color: #696969;
+}
+.about_item{
+    display: flex;
+}
+.about_block_left{
+    margin-right: 92px;
+}
+.about_content_block{
+    display: flex;
+}
+.about_block_left p,.about_block_right p{
+    line-height: 26px;
+    padding-left: 20px;
+}
+.about_block_left .about_content_block{
+    margin-bottom: 23px;
+}
+.about_block_left .about_content_block:last-child,.about_block_right .about_content_block:last-child{
+    margin-bottom: 0;
+}
+.about_block_right .about_content_block{
+    margin-bottom: 37px;
+}
+/* /About-block */
+
+/* About-us-company */
+.about_us_company .about_our_company{
+    background-image: none;
+    background-color: #EFF2F7;
+}
+.about_our_company .container{
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+.about_us_company .about_our_company .container .content_item{
+    box-shadow: none;
+}
+/* About-us-company */
+
+@media screen and (max-width: 768px) and (min-width:320px) and (orientation: portrait) {
+    .about_block{
+        background-color:#fff;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .about_nav{
+        justify-content:unset;
+        flex-direction: column;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .nav_block{
+        padding-top: 52px;
+        padding-bottom: 52px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .nav_block:not(:last-child){
+        margin-bottom: 30px;
+    }
+    .about_block h4{
+        font-size: 21px;
+        text-align: center;
+        padding-bottom: 0;
+    }
+    .about_block h2{
+        font-size: 36px;
+        line-height: 42px;
+        text-align: center;
+    }
+    .about_block h2 br,.p_one br,.about_block_left p br, .about_block_right p br{
+        display: none;
+    }
+    .about_item{
+        flex-wrap: wrap;
+    }
+    .about_block_left{
+        margin-right: 0;
+        margin-bottom: 23px;
+    }
+    .about_our_company .container{
+        padding-top: 100px;
+    }
+    .nav_image_item{
+        left: 42%;
+    }
+    .about_us_company .about_our_company{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
